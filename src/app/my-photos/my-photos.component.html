@@ -1,0 +1,11 @@
+<div class="header">
+  <h1>Images from Flickr</h1>
+  <input [(ngModel)]="searchTag" type="text">
+  <button (click)="callService()">Search</button>
+</div>
+
+<div class="row"> 
+  <div class="column" *ngFor="let photo of photos">
+    <img [src]="photo.url" style="width:100%">
+  </div>
+</div>

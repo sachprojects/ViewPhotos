@@ -1,0 +1,22 @@
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4px;
+}
+
+/* Create 4 equal columns that sits next to each other */
+.column {
+    flex: auto;
+    max-width: 24%;
+    padding: 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}

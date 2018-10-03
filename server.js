@@ -3,11 +3,11 @@ const express = require('express');
 const bodyParser = require('body-parser');
 
 const app = express();
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 3000;
 
 const key = 'afaca5b01abb45e0ac749fffa756cc60';
 
-app.use(express.static(__dirname, '/dist'));
+// app.use(express.static(__dirname, '/dist'));
 
 app.use(bodyParser.json());
 

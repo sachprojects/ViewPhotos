@@ -7,7 +7,7 @@ export class FlickrService {
   constructor(private http: Http) {};
 
   getPhotos(searchTag?){
-      var uri = `https://sachindemoapp.herokuapp.com/${searchTag}`;
+      var uri = `http://localhost:3000/${searchTag}`;
     return this.http
                .get(uri)
                .map(res => res.json())
